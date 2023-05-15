@@ -17,7 +17,7 @@ echo "<script>window.location.href ='contact.php'</script>";
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>HMS | Contact us</title>
+		<title>MS | Contacto</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
 	</head>
@@ -29,15 +29,15 @@ echo "<script>window.location.href ='contact.php'</script>";
 				<div class="wrap">
 				<!--start-logo-->
 				<div class="logo">
-		<a href="index.html" style="font-size: 30px;">Hospital Management system</a> 
+		<a href="index.html" style="font-size: 30px;">Medical appointment management system</a> 
 				</div>
 				<!--end-logo-->
 				<!--start-top-nav-->
 				<div class="top-nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html">Inicio</a></li>
 					
-						<li class="active"><a href="contact.php">contact</a></li>
+						<li class="active"><a href="contact.php">contacto</a></li>
 					</ul>					
 				</div>
 				<div class="clear"> </div>
@@ -52,11 +52,11 @@ echo "<script>window.location.href ='contact.php'</script>";
 				<div class="col span_1_of_3">
 					
       			<div class="company_address">
-				     	<h2>Hospital Address  :</h2>
+				     	<h2>Direccion   :</h2>
 						    	<p>500 Lorem Ipsum Dolor Sit,</p>
-						   		<p>22-56-2-9 Sit Amet, Lorem,</p>
-						   		<p>India</p>
-				   		<p>Phone:(00) 222 666 444</p>
+						   		<p>Lorem,</p>
+						   		<p>Mexico</p>
+				   		<p>Phone:(00) 000 00 00 0</p>
 				   		<p>Fax: (000) 000 00 00 0</p>
 				 	 	<p>Email: <span>info@mycompany.com</span></p>
 				   	
@@ -64,10 +64,10 @@ echo "<script>window.location.href ='contact.php'</script>";
 				</div>				
 				<div class="col span_2_of_3">
 				  <div class="contact-form">
-				  	<h2>Contact Us</h2>
+				  	<h2>Contactanos</h2>
 					    <form name="contactus" method="post">
 					    	<div>
-						    	<span><label>NAME</label></span>
+						    	<span><label>Nombre</label></span>
 						    	<span><input type="text" name="fullname" required="true" value=""></span>
 						    </div>
 						    <div>
@@ -75,15 +75,15 @@ echo "<script>window.location.href ='contact.php'</script>";
 						    	<span><input type="email" name="emailid" required="ture" value=""></span>
 						    </div>
 						    <div>
-						     	<span><label>MOBILE.NO</label></span>
+						     	<span><label>Numero de telefono</label></span>
 						    	<span><input type="text" name="mobileno" required="true" value=""></span>
 						    </div>
 						    <div>
-						    	<span><label>Description</label></span>
+						    	<span><label>Descripcion</label></span>
 						    	<span><textarea name="description" required="true"> </textarea></span>
 						    </div>
 						   <div>
-						   		<span><input type="submit" name="submit" value="Submit"></span>
+						   		<span><input type="submit" name="submit" value="Enviar"></span>
 						  </div>
 					    </form>
 				    </div>
@@ -98,9 +98,9 @@ echo "<script>window.location.href ='contact.php'</script>";
 		   	 <div class="wrap">
 		   	<div class="footer-left">
 		   			<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html">Inicio</a></li>
 						
-						<li><a href="contact.php">contact</a></li>
+						<li><a href="contact.php">contacto</a></li>
 					</ul>
 		   	</div>
 		  
