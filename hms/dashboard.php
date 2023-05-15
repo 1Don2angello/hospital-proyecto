@@ -25,6 +25,8 @@ check_login();
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 
 
 	</head>
@@ -42,14 +44,14 @@ check_login();
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">User | Dashboard</h1>
+									<h1 class="mainTitle">Usuario | Panel</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>
-										<span>User</span>
+										<span>Usuario</span>
 									</li>
 									<li class="active">
-										<span>Dashboard</span>
+										<span>Panel </span>
 									</li>
 								</ol>
 							</div>
@@ -61,12 +63,12 @@ check_login();
 								<div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">My Profile</h2>
+											<span class="fa-stack fa-2x"> </i> <i class="fi fi-rr-user-pen"></i></span>
+											<h2 class="StepTitle">Perfil</h2>
 											
 											<p class="links cl-effect-1">
 												<a href="edit-profile.php">
-													Update Profile
+													Actualizar perfil
 												</a>
 											</p>
 										</div>
@@ -75,12 +77,12 @@ check_login();
 								<div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">My Appointments</h2>
+											<span class="fa-stack fa-2x"> <i class="fi fi-rr-bookmark"></i> </span>
+											<h2 class="StepTitle">Mis citas</h2>
 										
 											<p class="cl-effect-1">
 												<a href="appointment-history.php">
-													View Appointment History
+												Ver historial de citas
 												</a>
 											</p>
 										</div>
@@ -89,12 +91,12 @@ check_login();
 								<div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle"> Book My Appointment</h2>
+											<span class="fa-stack fa-2x"><i class="fi fi-rr-add"></i> </span>
+											<h2 class="StepTitle">Reservar mi cita</h2>
 											
-											<p class="links cl-effect-1">
+											<p class="cl-effect-1">
 												<a href="book-appointment.php">
-													Book Appointment
+													Reservar cita
 												</a>
 											</p>
 										</div>

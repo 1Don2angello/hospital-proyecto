@@ -5,7 +5,7 @@
 						
 						<!-- start: MAIN NAVIGATION MENU -->
 						<div class="navbar-title">
-							<span>Main Navigation</span>
+							<span>Navegación Principal</span>
 						</div>
 						<ul class="main-navigation-menu">
 							<li>
@@ -15,7 +15,7 @@
 											<i class="ti-home"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Dashboard </span>
+											<span class="title"> Panel </span>
 										</div>
 									</div>
 								</a>
@@ -27,7 +27,7 @@
 											<i class="ti-pencil-alt"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Book Appointment </span>
+											<span class="title"> Reservar una cita </span>
 										</div>
 									</div>
 								</a>
@@ -40,7 +40,7 @@
 											<i class="ti-list"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Appointment History </span>
+											<span class="title"> Historial de citas </span>
 										</div>
 									</div>
 								</a>
@@ -52,7 +52,7 @@
 											<i class="ti-list"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Medical History </span>
+											<span class="title"> Historial medico </span>
 										</div>
 									</div>
 								</a>
