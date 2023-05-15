@@ -5,7 +5,7 @@
 						
 						<!-- start: MAIN NAVIGATION MENU -->
 						<div class="navbar-title">
-							<span>Main Navigation</span>
+							<span>Navegación Principal</span>
 						</div>
 						<ul class="main-navigation-menu">
 							<li>
@@ -15,7 +15,7 @@
 											<i class="ti-home"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Dashboard </span>
+											<span class="title"> Panel</span>
 										</div>
 									</div>
 								</a>
@@ -27,24 +27,24 @@
 											<i class="ti-user"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Doctors </span><i class="icon-arrow"></i>
+											<span class="title"> Doctores </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
 								<ul class="sub-menu">
 									<li>
 										<a href="doctor-specilization.php">
-											<span class="title"> Doctor Specialization </span>
+											<span class="title">Especializacion medica</span>
 										</a>
 									</li>
 									<li>
 										<a href="add-doctor.php">
-											<span class="title"> Add Doctor</span>
+											<span class="title">Agregar doctor</span>
 										</a>
 									</li>
 									<li>
 										<a href="Manage-doctors.php">
-											<span class="title"> Manage Doctors </span>
+											<span class="title">Administrar médicos</span>
 										</a>
 									</li>
 									
@@ -58,7 +58,7 @@
 											<i class="ti-user"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Users </span><i class="icon-arrow"></i>
+											<span class="title"> Usuarios </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -66,7 +66,7 @@
 									
 									<li>
 										<a href="manage-users.php">
-											<span class="title"> Manage Users </span>
+											<span class="title"> Administrar usuarios </span>
 										</a>
 									</li>
 									
@@ -79,7 +79,7 @@
 											<i class="ti-user"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Patients </span><i class="icon-arrow"></i>
+											<span class="title"> Pacientes </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -87,7 +87,7 @@
 									
 									<li>
 										<a href="manage-patient.php">
-											<span class="title"> Manage Patients </span>
+											<span class="title"> Administar pacientes </span>
 										</a>
 									</li>
 									
@@ -101,7 +101,7 @@
 											<i class="ti-file"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Appointment History </span>
+											<span class="title"> Historial de citas </span>
 										</div>
 									</div>
 								</a>
@@ -116,7 +116,7 @@
 											<i class="ti-files"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Conatctus Queries </span><i class="icon-arrow"></i>
+											<span class="title"> Conatacto Consulta </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -124,13 +124,13 @@
 									
 									<li>
 										<a href="unread-queries.php">
-											<span class="title"> Unread Query </span>
+											<span class="title"> Consulta no leída </span>
 										</a>
 									</li>
 
 									<li>
 										<a href="read-query.php">
-											<span class="title"> Read Query </span>
+											<span class="title"> leer consulta </span>
 										</a>
 									</li>
 									
@@ -146,7 +146,7 @@
 											<i class="ti-list"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Doctor Session Logs </span>
+											<span class="title">Registro de sesion Doc</span>
 										</div>
 									</div>
 								</a>
@@ -161,7 +161,7 @@
 											<i class="ti-list"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> User Session Logs </span>
+											<span class="title">Registro de sesion Usuario </span>
 										</div>
 									</div>
 								</a>
@@ -173,7 +173,7 @@
 											<i class="ti-files"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Reports </span><i class="icon-arrow"></i>
+											<span class="title"> Reportes </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -181,7 +181,7 @@
 									
 									<li>
 										<a href="between-dates-reports.php">
-											<span class="title">B/w dates reports </span>
+											<span class="title">informes de fechas</span>
 										</a>
 									</li>
 
@@ -195,7 +195,7 @@
 											<i class="ti-search"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Patient Search </span>
+											<span class="title">Buscar paciente</span>
 										</div>
 									</div>
 								</a>
