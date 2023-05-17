@@ -69,7 +69,24 @@
 											<span class="title"> Administrar usuarios </span>
 										</a>
 									</li>
-									
+									<li>
+										<a href="change-password.php">
+											<!-- cambiar la pagina a admin de la carpeta -->
+											<span class="title">Cambiar contrasenia</span>
+										</a>
+									</li>
+									<li>
+										<a href="edit-profile.php">
+											<!-- mover la pagina a la del admin -->
+											<span class="title">editar perfil</span>
+										</a>
+									</li>
+									<li>
+										<a href="edit-profile.php">
+											<!-- mover la pagina a la del admin aunque va ser raro para mover esto-->
+											<span class="title">crear usuario</span>
+										</a>
+									</li>
 								</ul>
 								</li>
 								<li>

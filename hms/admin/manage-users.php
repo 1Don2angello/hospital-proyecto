@@ -103,9 +103,9 @@ if (isset($_GET['del'])) {
 												</td>
 												<td>
 													<div class="visible-md visible-lg hidden-sm hidden-xs">
-													<a href="editar--perfil.php?id=<?php echo $row['id']; ?>" class="btn btn-transparent btn-xs" tooltip-placement="top" tooltip="Edit"><i class="fa fa-pencil"></i></a>
+														<a href="editar--perfil.php?id=<?php echo $row['id']; ?>" class="btn btn-transparent btn-xs" tooltip-placement="top" tooltip="Edit"><i class="fa fa-pencil"></i></a>
 
-														<a href="manage-users.php?id=<?php echo $row['id'] ?>&del=delete" onClick="return confirm('Are you sure you want to delete?')" class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
+														<a href="manage-users.php?id=<?php echo $row['id'] ?>&del=delete" onClick="return confirm('¿Estás seguro de que quieres eliminar?')" class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
 													</div>
 													<div class="visible-xs visible-sm hidden-md hidden-lg">
 														<div class="btn-group" dropdown is-open="status.isopen">
@@ -150,17 +150,18 @@ if (isset($_GET['del'])) {
 			<!-- end: SELECT BOXES -->
 
 		</div>
-	</div>
-	</div>
-	<!-- start: FOOTER -->
-	<?php include('include/footer.php'); ?>
-	<!-- end: FOOTER -->
+		<!-- start: FOOTER -->
+		<?php include('include/footer.php'); ?>
+		<!-- end: FOOTER -->
 
-	<!-- start: SETTINGS -->
-	<?php include('include/setting.php'); ?>
-
-	<!-- end: SETTINGS -->
+		<!-- start: SETTINGS -->
+		<?php include('include/setting.php'); ?>
+		<>
+		<!-- end: SETTINGS -->
 	</div>
+
+
+
 	<!-- start: MAIN JAVASCRIPTS -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>

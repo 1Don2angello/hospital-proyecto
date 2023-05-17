@@ -176,23 +176,27 @@ if (isset($_GET['del'])) {
 							</div>
 						</div>
 					</div>
+
+
 				</div>
 			</div>
-			<!-- end: BASIC EXAMPLE -->
-			<!-- end: SELECT BOXES -->
 
 		</div>
-	</div>
-	</div>
-	<!-- start: FOOTER -->
-	<?php include('include/footer.php'); ?>
-	<!-- end: FOOTER -->
+		<!-- end: BASIC EXAMPLE -->
+		<!-- end: SELECT BOXES -->
+		<!-- start: FOOTER -->
+		<?php include('include/footer.php'); ?>
+		<!-- end: FOOTER -->
 
-	<!-- start: SETTINGS -->
-	<?php include('include/setting.php'); ?>
+		<!-- start: SETTINGS -->
+		<?php include('include/setting.php'); ?>
+		<>
+		<!-- end: SETTINGS -->
 
-	<!-- end: SETTINGS -->
 	</div>
+
+
+
 	<!-- start: MAIN JAVASCRIPTS -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>

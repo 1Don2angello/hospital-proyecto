@@ -11,9 +11,9 @@ if (isset($_POST['submit'])) {
 	$city = $_POST['city'];
 	$gender = $_POST['gender'];
 
-	$sql = mysqli_query($con, "Update users set fullName='$fname',address='$address',city='$city',gender='$gender' where id='" . $_SESSION['id'] . "'");
+	$sql = mysqli_query($con, "Update users set fullName='$fname',address='$address',city='$city',gender='$gender' where id='$did'");
 	if ($sql) {
-		$msg = "Your Profile updated Successfully";
+		$msg = "Datos han sido actualizado";
 	}
 }
 ?>
@@ -87,7 +87,7 @@ if (isset($_POST['submit'])) {
 												$sql = mysqli_query($con, "select * from users where id='$did'");
 												while ($data = mysqli_fetch_array($sql)) {
 												?>
-													<h4><?php echo htmlentities($data['fullName']); ?>'s [Profile]</h4>
+													<h4><?php echo htmlentities($data['fullName']); ?>'s [Perfil]</h4>
 													<p><b>Registro de perfil Fecha: </b><?php echo htmlentities($data['regDate']); ?></p>
 													<?php if ($data['updationDate']) { ?>
 														<p><b>Fecha de última actualización del perfil: </b><?php echo htmlentities($data['updationDate']); ?></p>
@@ -139,12 +139,12 @@ if (isset($_POST['submit'])) {
 															<!-- readonly="readonly" para que no se edite pero se muestre -->
 															<a href="./cambio--email.php">Actualice su identificación de correo electrónico</a>
 														</div>
-
-														<button type="submit" name="submit" class="btn btn-o btn-primary">
-															Actualizar
-														</button>
+													<?php } ?>
+													<button type="submit" name="submit" class="btn btn-o btn-primary">
+														Actualizar
+													</button>
 													</form>
-												<?php } ?>
+
 											</div>
 										</div>
 									</div>
@@ -153,7 +153,6 @@ if (isset($_POST['submit'])) {
 							</div>
 							<div class="col-lg-12 col-md-12">
 								<div class="panel panel-white">
-
 
 								</div>
 							</div>
@@ -178,7 +177,7 @@ if (isset($_POST['submit'])) {
 
 		<!-- start: SETTINGS -->
 		<?php include('include/setting.php'); ?>
-
+		<>												
 		<!-- end: SETTINGS -->
 	</div>
 	<!-- start: MAIN JAVASCRIPTS -->
