@@ -38,9 +38,9 @@
 				</a>
 				<ul class="dropdown-menu dropdown-dark">
 					<li>
-						
+
 						<a href="logout.php">
-							Log Out
+							cerrar sesión
 						</a>
 					</li>
 				</ul>

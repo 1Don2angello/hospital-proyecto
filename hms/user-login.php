@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
 		$uip = $_SERVER['REMOTE_ADDR'];
 		$status = 0;
 		mysqli_query($con, "insert into userlog(username,userip,status) values('" . $_SESSION['login'] . "','$uip','$status')");
-		$_SESSION['errmsg'] = "Invalid username or password";
+		$_SESSION['errmsg'] = "Usuario invalido";
 		$extra = "user-login.php";
 		$host  = $_SERVER['HTTP_HOST'];
 		$uri  = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
 		<div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 			<div class="logo margin-top-30">
 				<a href="../index.html">
-					<h2>Paciente</h2>
+					<h2>Acceder</h2>
 				</a>
 			</div>
 
@@ -80,11 +80,9 @@ if (isset($_POST['submit'])) {
 							<span class="input-icon">
 								<input type="password" class="form-control password" name="password" placeholder="Password">
 								<i class="fa fa-lock"></i>
-							</span><a href="forgot-password.php">
-								Has olvidado tu contraseña ?
-							</a>
+							</span>
 						</div>
-						
+
 						<div class="form-actions">
 							<button type="submit" class="btn btn-primary pull-right mr-4" name="submit">
 								Acceder <i class="fa fa-arrow-circle-right"></i>
@@ -93,7 +91,7 @@ if (isset($_POST['submit'])) {
 								Regresar <i class="fa fa-arrow-circle-left"></i>
 							</a>
 						</div>
-
+						
 					</fieldset>
 				</form>
 
