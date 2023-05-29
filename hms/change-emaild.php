@@ -1,27 +1,21 @@
 <?php
-session_start();
-error_reporting(0);
-include('include/config.php');
-include('include/checklogin.php');
-check_login();
-if(isset($_POST['submit']))
-{
-	$email=$_POST['email'];
-$sql=mysqli_query($con,"Update users set email='$email' where id='".$_SESSION['id']."'");
-if($sql)
-{
-$msg="Your email updated Successfully";
-
-
-}
-
-}
+	session_start();
+	error_reporting(0);
+		include('include/config.php');
+		include('include/checklogin.php');
+	check_login();
+	if(isset($_POST['submit'])){
+		$email=$_POST['email'];
+		$sql=mysqli_query($con,"Update users set email='$email' where id='".$_SESSION['id']."'");
+		if($sql){
+			$msg="Your email updated Successfully";
+		}
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>User | Edit Profile</title>
-		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
@@ -36,16 +30,14 @@ $msg="Your email updated Successfully";
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
-
-
 	</head>
 	<body>
 		<div id="app">		
 <?php include('include/sidebar.php');?>
 			<div class="app-content">
 				
-						<?php include('include/header.php');?>
-						
+				<?php include('include/header.php');?>
+				
 				<!-- end: TOP NAVBAR -->
 				<div class="main-content" >
 					<div class="wrap-content container" id="container">
@@ -54,7 +46,7 @@ $msg="Your email updated Successfully";
 							<div class="row">
 								<div class="col-sm-8">
 									<h1 class="mainTitle">User | Edit Profile</h1>
-																	</div>
+									</div>
 								<ol class="breadcrumb">
 									<li>
 										<span>User </span>
@@ -86,11 +78,8 @@ $msg="Your email updated Successfully";
 															</label>
 			<input type="email" class="form-control" name="email" id="email" onBlur="userAvailability()"  placeholder="Email" required>
 								
-									 <span id="user-availability-status1" style="font-size:12px;"></span>
+									<span id="user-availability-status1" style="font-size:12px;"></span>
 														</div>
-
-
-
 														
 														
 														
@@ -99,7 +88,6 @@ $msg="Your email updated Successfully";
 															Update
 														</button>
 													</form>
-										
 												</div>
 											</div>
 										</div>
@@ -114,13 +102,11 @@ $msg="Your email updated Successfully";
 										</div>
 									</div>
 								</div>
-						
 						<!-- end: BASIC EXAMPLE -->
-			
 					
 					
-						
-						
+					
+					
 					
 						<!-- end: SELECT BOXES -->
 						
@@ -130,10 +116,8 @@ $msg="Your email updated Successfully";
 			<!-- start: FOOTER -->
 	<?php include('include/footer.php');?>
 			<!-- end: FOOTER -->
-		
 			<!-- start: SETTINGS -->
 	<?php include('include/setting.php');?>
-			
 			<!-- end: SETTINGS -->
 		</div>
 		<!-- start: MAIN JAVASCRIPTS -->
@@ -165,20 +149,20 @@ $msg="Your email updated Successfully";
 			});
 		</script>
 	<script>
-function userAvailability() {
-$("#loaderIcon").show();
-jQuery.ajax({
-url: "check_availability.php",
-data:'email='+$("#email").val(),
-type: "POST",
-success:function(data){
-$("#user-availability-status1").html(data);
-$("#loaderIcon").hide();
-},
-error:function (){}
-});
-}
-</script>	
+		function userAvailability() {
+		$("#loaderIcon").show();
+		jQuery.ajax({
+		url: "check_availability.php",
+		data:'email='+$("#email").val(),
+		type: "POST",
+			success:function(data){
+			$("#user-availability-status1").html(data);
+			$("#loaderIcon").hide();
+			},
+		error:function (){}
+		});
+	}
+	</script>	
 		
 	</body>
 </html>

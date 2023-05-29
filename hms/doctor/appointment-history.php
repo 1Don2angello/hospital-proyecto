@@ -5,10 +5,10 @@ include('include/config.php');
 include('include/checklogin.php');
 check_login();
 if(isset($_GET['cancel']))
-		  {
+		  		{
 mysqli_query($con,"update appointment set doctorStatus='0' where id ='".$_GET['id']."'");
-                  $_SESSION['msg']="Appointment canceled !!";
-		  }
+                $_SESSION['msg']="Appointment canceled !!";
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +94,7 @@ while($row=mysqli_fetch_array($sql))
 												<td><?php echo $row['doctorSpecialization'];?></td>
 												<td><?php echo $row['consultancyFees'];?></td>
 												<td><?php echo $row['appointmentDate'];?> / <?php echo
-												 $row['appointmentTime'];?>
+												$row['appointmentTime'];?>
 												</td>
 												<td><?php echo $row['postingDate'];?></td>
 												<td>

@@ -11396,3 +11396,9 @@ td.small-width {
 [date-picker] .disabled.active, [date-picker] .disabled.now {
   color: #ffffff !important;
 }
+/*  */
+table, th, td {
+  width:80%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
