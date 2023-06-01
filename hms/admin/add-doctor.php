@@ -1,24 +1,24 @@
 <?php
-session_start();
-error_reporting(0);
-include('include/config.php');
-include('include/checklogin.php');
-check_login();
+	session_start();
+	error_reporting(0);
+	include('include/config.php');
+	include('include/checklogin.php');
+	check_login();
 
-if (isset($_POST['submit'])) {
-	$docspecialization = $_POST['Doctorspecialization'];
-	$docname = $_POST['docname'];
-	$docaddress = $_POST['clinicaddress'];
-	$docfees = $_POST['docfees'];
-	$doccontactno = $_POST['doccontact'];
-	$docemail = $_POST['docemail'];
-	$password = md5($_POST['npass']);
-	$sql = mysqli_query($con, "insert into doctors(specilization,doctorName,address,docFees,contactno,docEmail,password) values('$docspecialization','$docname','$docaddress','$docfees','$doccontactno','$docemail','$password')");
-	if ($sql) {
-		echo "<script>alert('Información del médico agregada con éxito');</script>";
-		echo "<script>window.location.href ='manage-doctors.php'</script>";
+	if (isset($_POST['submit'])) {
+		$docspecialization = $_POST['Doctorspecialization'];
+		$docname = $_POST['docname'];
+		$docaddress = $_POST['clinicaddress'];
+		$docfees = $_POST['docfees'];
+		$doccontactno = $_POST['doccontact'];
+		$docemail = $_POST['docemail'];
+		$password = md5($_POST['npass']);
+		$sql = mysqli_query($con, "insert into doctors(specilization,doctorName,address,docFees,contactno,docEmail,password) values('$docspecialization','$docname','$docaddress','$docfees','$doccontactno','$docemail','$password')");
+		if ($sql) {
+			echo "<script>alert('Información del médico agregada con éxito');</script>";
+			echo "<script>window.location.href ='manage-doctors.php'</script>";
+		}
 	}
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,9 +73,7 @@ if (isset($_POST['submit'])) {
 	<div id="app">
 		<?php include('include/sidebar.php'); ?>
 		<div class="app-content">
-
 			<?php include('include/header.php'); ?>
-
 			<!-- end: TOP NAVBAR -->
 			<div class="main-content">
 				<div class="wrap-content container" id="container">

@@ -4,7 +4,7 @@
 		include('include/config.php');
 		include('include/checklogin.php');
 	check_login();
-
+    
 	if(isset($_POST['submit'])){	
 		//$docid=$_SESSION['id'];
 		$clave = $_POST["clave"];
@@ -57,24 +57,28 @@
 		$diagnostico = $_POST["diagnostico"];
 		$indicacionesFinales = $_POST["indicacionesFinales"];
 			
-		$query3=mysqli_query($con,"INSERT INTO pacientes (clave, hora, nombre, fecha, edad, peso, sexo, talla, tensArt, edoCivil, frCard, 
+		$query3="INSERT INTO pacientes (clave, hora, nombre, fecha, edad, peso, sexo, talla, tensArt, edoCivil, frCard, 
 		frResp, imc, temp, ahf, apnp, app, pActual, eFisica, fechaN, puestoS, escolaridad, lugarOrigen, analisisCovid, 
 		indicaciones, visitarUFM, observaciones, cirugias, traumatismos, fracturas, luxaciones, alergias, agudezaVisual, 
 		licenciaLentes, riesgoSalub, envioOpto, lentGraduadios, perAbdominal, examLab, tipoSangre, glucosaCapilar, iras, 
-		porcentajeOxigeno, pruebaAplicada, FechaAplicacion, horaAplicacion, resultado, diagnostico, indicacionesFinales) 
+		porcentajeOxigeno, pruevaAplicada, FechaAplicacion, horaAplicacion, resultado, diagnostico, indicacionesFinales) 
 				VALUES ('$clave','$hora','$nombre','$fecha','$edad','$peso','$sexo','$talla','$tensArt','$edoCivil','$frCard',
 		'$frResp','$imc','$temp','$ahf','$apnp','$app','$pActual','$eFisica','$fechaN','$puestoS','$escolaridad','$lugarOrigen',
 		'$analisisCovid','$indicaciones','$visitarUFM','$observaciones','$cirugias','$traumatismos','$fracturas','$luxaciones',
 		'$alergias','$agudezaVisual','$licenciaLentes','$riesgoSalub','$envioOpto','$lentGraduadios','$perAbdominal','$examLab',
-		'$tipoSangre','$glucosaCapilar','$iras','$porcentajeOxigeno','$pruebaAplicada','$FechaAplicacion','$horaAplicacion',
-		'$resultado','$diagnostico','$indicacionesFinales')");
-
+		'$tipoSangre','$glucosaCapilar','$iras','$porcentajeOxigeno','$pruevaAplicada','$FechaAplicacion','$horaAplicacion',
+		'$resultado','$diagnostico','$indicacionesFinales')";
+        
 		//$resultado3=mysqli_prepare($con,$query3);
-		if(!$query3){
-			echo "<script>alert('FAILD');</script>";
+        
+
+		if(!mysqli_query($con, $query3)){
+			echo "<script>alert('FAIL');</script>";
 			header('location:add-patient.php');
 		}else{
+						
 			echo "<script>alert('Patient info added Successfully');</script>";
+			
 			header('location:add-patient.php');
 		}
 	}
@@ -121,10 +125,10 @@
 				<div class="main-content" >
 					<div class="wrap-content container" id="container">
 						<!-- start: PAGE TITLE -->
-						<section id="page-title">
+						<!-- <section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Patient | Add Patient</h1>
+									<h1 class="mainTitle">Doctor | Add Patient</h1>
 								</div>
 								<ol class="breadcrumb">
 									<li>
@@ -135,7 +139,7 @@
 									</li>
 								</ol>
 							</div>
-						</section>
+						</section> -->
 						<div class="container-fluid container-fullw bg-white">
 							<div class="row">
 								<div class="col-md-12">
@@ -143,7 +147,7 @@
 										<div class="col-lg-8 col-md-12">
 											<div class="panel panel-white">
 												<div class="panel-heading">
-													<h5 class="panel-title">Add Patient</h5>
+													<h5 class="panel-title">Agrege un paciente</h5>
 												</div>
 												<div class="panel-body">
 													<form role="form" name="" method="post">

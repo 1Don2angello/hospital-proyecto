@@ -4206,6 +4206,7 @@ a.text-light:hover {
 /* ---------------------------------------------------------------------- */
 /*  Accordion
 /* ---------------------------------------------------------------------- */
+
 .accordion .panel {
   border: none;
   -moz-border-radius: 0;
@@ -11365,7 +11366,6 @@ td.small-width {
   color: #007AFF;
   font-weight: bold;
 }
-
 [date-picker] .switch {
   color: #5b5b60;
 }
@@ -11396,9 +11396,32 @@ td.small-width {
 [date-picker] .disabled.active, [date-picker] .disabled.now {
   color: #ffffff !important;
 }
-/*  */
-table, th, td {
+/* Cambios Practica  */
+/* table, th, td {
   width:80%;
   border: 1px solid black;
   border-collapse: collapse;
+}
+ */
+table.manaje{
+  width:100%;
+  border: 1px solid black;
+}
+
+th.manaje{
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color:#f2f2f2;
+}
+
+
+th.view{
+  color:#2F2F2F;
+  background-color: #D1D7DF;
+  border: 1px solid gray;
+}
+td{
+  color:#2F2F2F;
 }

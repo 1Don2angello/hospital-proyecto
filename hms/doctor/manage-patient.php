@@ -4,7 +4,7 @@
 		include('include/config.php');
 		include('include/checklogin.php');
 	check_login();
-?>
+?> 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -20,7 +20,7 @@
 		<link href="vendor/select2/select2.min.css" rel="stylesheet" media="screen">
 		<link href="vendor/bootstrap-datepicker/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" media="screen">
 		<link href="vendor/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" media="screen">
-		<link rel="stylesheet" href="assets/css/styles.css">
+		<!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
 	</head>
@@ -35,7 +35,7 @@
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Doctor | Manage Patients </h1>
+									<h1 class="mainTitle">Doctor  |   Administrar Pacientes </h1>
 								</div>
 							<ol class="breadcrumb">
 								<li>
@@ -51,24 +51,17 @@
 							<div class="row">
 								<div class="col-md-12">
 									<h5 class="over-title margin-bottom-15">Manage <span class="text-bold">Patients</span></h5>
-									<table class="table table-hover" id="sample-table-1">
-										<thead>
+									<table class="manaje"><!-- class="table table-hover" id="sample-table-1" -->
+										<thead class="manaje">
 											<tr>
-												<!-- <th class="center">#</th>
-												<th>Patient Name</th>
-												<th>Patient Contact Number</th>
-												<th>Patient Gender </th>
-												<th>Creation Date </th>
-												<th>Updation Date </th>
-												<th>Action</th> -->
-												<th scope="col">#</th>
-												<th scope="col">clave</th>
-												<th scope="col">hora</th>
-												<th scope="col">nombre</th>
-												<th scope="col">Fecha</th>
-												<th scope="col">Edad</th> 
-												<!-- Acciones -->
-												<th scope="col">Acciones</th>
+												<th class="manaje1" scope="col">#</th>
+												<th class="manaje" scope="col">clave</th>
+												<th class="manaje" scope="col">hora</th>
+												<th class="manaje" scope="col">nombre</th>
+												<th class="manaje" scope="col">Fecha</th>
+												<th class="manaje" scope="col">Edad</th> 
+												
+												<th class="manaje" scope="col">Acciones</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -86,17 +79,19 @@
 											?>
 												<tr>
 													<th scope="row"><?php echo $fila2["id"] ?></th>
-													<td><?php echo $fila2["clave"] ?></td>
-													<td><?php echo $fila2["hora"] ?></td>
-													<td><?php echo $fila2["nombre"] ?></td>
-													<td><?php echo $fila2["fecha"] ?></td>
-													<td><?php echo $fila2["edad"] ?></td>
+													<td class="manaje"><?php echo $fila2["clave"] ?></td>
+													<td class="manaje"><?php echo $fila2["hora"] ?></td>
+													<td class="manaje"><?php echo $fila2["nombre"] ?></td>
+													<td class="manaje"><?php echo $fila2["fecha"] ?></td>
+													<td class="manaje"><?php echo $fila2["edad"] ?></td>
 													<!--Acciones de la tabla por cada insertado-->
-													<td>
-														<a class='btn' href='verConsulta.php?id=<?php echo $fila2["id"]; ?>'>Ver</a>
-														<a class='btn' href='notificarConsulta.php?id=<?php echo $fila2["id"]; ?>'>Notificar</a>
-														<a class='btn' href='edicionConsulta.php?id=<?php echo $fila2["id"]; ?>'>Editar</a>
-														<a class='btn' href='eliminarConsulta.php?id=<?php echo $fila2["id"]; ?>'>Eliminar</a>
+													<td class="manaje">
+														<a href="edit-doctor.php?id=<?php echo $row['id']; ?>" class="btn btn-transparent btn-xs" tooltip-placement="top" tooltip="Edit"><i class="fa fa-pencil"></i></a>
+														<a href="manage-patient.php?id=<?php echo $row['id'] ?>&del=delete" onClick="return confirm('¿Estás seguro de que quieres eliminar al Paciente?')" class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
+														<a class='btn' href='view-patient.php?id=<?php echo $fila2["id"]; ?>'>Ver</a>
+														<!-- <a class='btn' href='notificarConsulta.php?id=<?php echo $fila2["id"]; ?>'>Notificar</a> -->
+														<!-- <a class='btn' href='edicionConsulta.php?id=<?php echo $fila2["id"]; ?>'>Editar</a> -->
+														<a class='btn' href='delete-patient.php?id=<?php echo $fila2["id"]; ?>'>Eliminar</a>
 													</td>
 												</tr>
 												<?php  

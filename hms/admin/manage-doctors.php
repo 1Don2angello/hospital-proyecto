@@ -62,8 +62,6 @@ if (isset($_GET['del'])) {
 					<!-- end: PAGE TITLE -->
 					<!-- start: BASIC EXAMPLE -->
 					<div class="container-fluid container-fullw bg-white">
-
-
 						<div class="row">
 							<div class="col-md-12">
 								<h5 class="over-title margin-bottom-15">Administrar <span class="text-bold">Doctores</span></h5>
@@ -77,7 +75,6 @@ if (isset($_GET['del'])) {
 											<th class="hidden-xs">Nombre</th>
 											<th>Fecha de creacion </th>
 											<th>Accion</th>
-
 										</tr>
 									</thead>
 									<tbody>
@@ -94,10 +91,9 @@ if (isset($_GET['del'])) {
 												<td><?php echo $row['creationDate']; ?>
 												</td>
 
-												<td>
+												<td><!--  -->
 													<div class="visible-md visible-lg hidden-sm hidden-xs">
 														<a href="edit-doctor.php?id=<?php echo $row['id']; ?>" class="btn btn-transparent btn-xs" tooltip-placement="top" tooltip="Edit"><i class="fa fa-pencil"></i></a>
-
 														<a href="manage-doctors.php?id=<?php echo $row['id'] ?>&del=delete" onClick="return confirm('¿Estás seguro de que quieres eliminar?')" class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
 													</div>
 													<div class="visible-xs visible-sm hidden-md hidden-lg">
@@ -126,12 +122,9 @@ if (isset($_GET['del'])) {
 													</div>
 												</td>
 											</tr>
-
 										<?php
 											$cnt = $cnt + 1;
 										} ?>
-
-
 									</tbody>
 								</table>
 							</div>
@@ -141,18 +134,14 @@ if (isset($_GET['del'])) {
 			</div>
 			<!-- end: BASIC EXAMPLE -->
 			<!-- end: SELECT BOXES -->
-
 		</div>
 		<!-- start: FOOTER -->
 		<?php include('include/footer.php'); ?>
 		<!-- end: FOOTER -->
-
 		<!-- start: SETTINGS -->
 		<?php include('include/setting.php'); ?>
 		<!-- end: SETTINGS -->
 	</div>
-
-
 	<!-- start: MAIN JAVASCRIPTS -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
